@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    msgpack (0.5.6)
+    rack (1.5.2)
+
+PLATFORMS
+  ruby
+  x86-mingw32
+
+DEPENDENCIES
+  msgpack
+  rack (~> 1.1)
