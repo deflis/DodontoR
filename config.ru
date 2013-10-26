@@ -10,8 +10,8 @@ use Rack::Reloader
 use Rack::Logger, ::Logger::ERROR
 
 map '/DodontoF/DodontoFServer.rb' do
-    use DodontoR::Utils::MessageViewer
-    run DodontoR::Application.new
+  use DodontoR::Utils::MessageViewer
+  run DodontoR::Application.new
 end
 
 run Rack::Directory.new('./public')
