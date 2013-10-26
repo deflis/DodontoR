@@ -1,15 +1,16 @@
 # coding: utf-8
 
-$LOAD_PATH.unshift './lib'
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'dodontor_application'
-require './msg_viewer.rb'
+require 'dodontor'
+require 'dodontor/utils/messageviewer'
 
 use Rack::Reloader
 use Rack::Logger, ::Logger::ERROR
 
 map '/DodontoF/DodontoFServer.rb' do
-    use MsgViewer
+    use DodontoR::Utils::MessageViewer
     run DodontoR::Application.new
 end
 

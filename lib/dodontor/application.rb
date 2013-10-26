@@ -2,9 +2,6 @@
 
 Encoding.default_external = 'UTF-8'
 
-require "./DodontoF/DodontoFServer"
-require "dodontor_core"
-
 module DodontoR
     class Application
         def call(env)

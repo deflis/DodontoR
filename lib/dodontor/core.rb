@@ -1,8 +1,11 @@
 # coding: utf-8
 
 Encoding.default_external = 'UTF-8'
+
+
 require 'msgpack'
 require 'json'
+require DodontoR.get_dodontof_server
 
 module DodontoR
     class Core < DodontoFServer
