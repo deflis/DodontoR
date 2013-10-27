@@ -60,6 +60,7 @@ module DodontoR
     def debug(obj1, *obj2)
       logging(obj1, *obj2)
     end
+
     def getTextFromJsonData(jsonData)
       begin
         jsonData = [] << jsonData if !(jsonData.is_a?(Array) || jsonData.is_a?(Hash))
@@ -115,6 +116,54 @@ module DodontoR
 
       logging(messagePack, "messagePack")
       return messagePack
+    end
+
+    def addTextToFile(fileName, addedText)
+      super
+    end
+
+    def createFile(fileName, text)
+      super
+    end
+
+    def getSaveTextOnFileLocked(fileName)
+      super
+    end
+
+    def getSaveFileLock(fileName, isReadOnly = false)
+      super
+    end
+
+    def getSaveFileTimeStamp(fileName)
+      super
+    end
+
+    def isExist?(fileName)
+      super
+    end
+
+    def isExistDir?(dirName)
+      super
+    end
+
+    def readLines(fileName)
+      super
+    end
+
+    def loadSaveFile(typeName, saveFileName)
+      super
+    end
+
+    def loadSaveFileDataForEachType(fileTypeName, trueSaveFileName, saveDataForType)
+      super
+    end
+
+    def deleteChatLogBySaveFile(trueSaveFileName)
+      super
+    end
+
+    def getTestResponseText
+      "「DodontoR」の動作環境は正常に起動しています。";
     end
   end
 end
